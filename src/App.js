@@ -8,7 +8,7 @@ import Background from "./components/Background";
 import TextSection from "./components/TextSection";
 import Box from "./components/Box";
 import Select from "./components/Select";
-import Scene from "./components/Scene";
+// import Scene from "./components/Scene";
 import './styles.css';
 import AnimatedSphere from "./components/AnimatedSphere";
 
