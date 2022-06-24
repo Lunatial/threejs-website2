@@ -29,7 +29,7 @@ function App() {
             <TextSection/>
             <Select setSelected={setSelected} selected={selected} />
             <Canvas className="canvas">
-                <OrbitControls enableZoom={false}/>
+                <OrbitControls enableZoom={true}/>
                 <ambientLight intensity={0.5}/>
                 <directionalLight position={[-2, 5, 2]} intensity={1}/>
                 <Suspense fallback={"Loading"}>
@@ -37,7 +37,7 @@ function App() {
                 </Suspense>
             </Canvas>
             <Canvas className="canvas">
-                <OrbitControls enableZoom={false}/>
+                <OrbitControls enableZoom={true}/>
                 <ambientLight intensity={0.5}/>
                 <directionalLight position={[-2, 5, 2]} intensity={1}/>
                 <Suspense fallback={"Loading"}>
@@ -45,7 +45,7 @@ function App() {
                 </Suspense>
             </Canvas>
             <Canvas className="canvas">
-                <OrbitControls enableZoom={false}/>
+                <OrbitControls enableZoom={true}/>
                 <ambientLight intensity={0.5}/>
                 <directionalLight position={[-2, 5, 2]} intensity={1}/>
                 <Suspense fallback={"Loading"}>
