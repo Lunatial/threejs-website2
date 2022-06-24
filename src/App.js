@@ -8,7 +8,7 @@ import Background from "./components/Background";
 import TextSection from "./components/TextSection";
 import Box from "./components/Box";
 import Select from "./components/Select";
-// import Scene from "./components/Scene";
+import Iphone from "./components/Iphone";
 import './styles.css';
 import AnimatedSphere from "./components/AnimatedSphere";
 
@@ -44,18 +44,18 @@ function App() {
                     <AnimatedSphere />
                 </Suspense>
             </Canvas>
-            {/*<Canvas className="canvas">*/}
-            {/*    <OrbitControls enableZoom={false}/>*/}
-            {/*    <ambientLight intensity={0.5}/>*/}
-            {/*    <directionalLight position={[-2, 5, 2]} intensity={1}/>*/}
-            {/*    <Suspense fallback={"Loading"}>*/}
-            {/*        /!*https://www.youtube.com/watch?v=wxvSHOrBHbw*!/*/}
-            {/*        /!*https://sketchfab.com/3d-models/red-car-wreck-8a540625b599428796cda78578040deb#download*!/*/}
-            {/*        /!*https://github.com/CesiumGS/gltf-pipeline*!/*/}
-            {/*        /!*https://github.com/pmndrs/gltfjsx*!/*/}
-            {/*        <Scene />*/}
-            {/*    </Suspense>*/}
-            {/*</Canvas>*/}
+            <Canvas className="canvas">
+                <OrbitControls enableZoom={false}/>
+                <ambientLight intensity={0.5}/>
+                <directionalLight position={[-2, 5, 2]} intensity={1}/>
+                <Suspense fallback={"Loading"}>
+                    {/*https://www.youtube.com/watch?v=wxvSHOrBHbw*/}
+                    {/*https://sketchfab.com/3d-models/apple-iphone-13-pro-max-4328dea00e47497dbeac73c556121bc9#download*/}
+                    {/*https://github.com/CesiumGS/gltf-pipeline*/}
+                    {/*https://github.com/pmndrs/gltfjsx*/}
+                    <Iphone />
+                </Suspense>
+            </Canvas>
         </Wrapper>
     );
 }
